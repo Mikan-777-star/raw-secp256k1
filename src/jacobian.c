@@ -168,7 +168,7 @@ void jacobian_to_affine(Point* affine_res, const Point* jacobian_pt){
         zero_UInt256(&affine_res->y);
         return;
     }
-    UInt256 z_inv, z_inv_2, z_inv_3, tmp;
+    UInt256 z_inv, z_inv_2, z_inv_3;
     //Z_inv
     mod_inv(&z_inv, &jacobian_pt->z);
 
